@@ -22,9 +22,9 @@ There are several important criterion in the base model for prioritization:
 * Incorporating the ability for users to change the number of stocks being presented randomly (i.e., count = 1 --> count = 5).
 
 ## Technical Stack
-* [API]: Yahoo Finance (API) data handling and migration
-* [Languages]: Java
-* [IDE]: Visual Studio Code
-* [Functions]: Math.random() and Java.io.*
+* API(s): Yahoo Finance (API) data handling and migration
+* Language(s): Java
+* IDE(s): Visual Studio Code
+* Function(s): Math.random() and Java.io.*
 
 _Last Updated: 10/27/2026 @ 5:30 P.M._
