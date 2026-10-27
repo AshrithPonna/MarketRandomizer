@@ -10,5 +10,21 @@ There are several important criterion in the base model for prioritization:
 
 ## Flowchart Representation (Architecture)
 'This is representative of the functionality and logistics behind this program; each identifier corresponds to a certain function of the program and how it relates to various inputs, outputs, libraries, etc.'
+
 <img width="797" height="457" alt="StockMarketRandomizer_AshrithPonna drawio" src="https://github.com/user-attachments/assets/6d7d304b-3f17-4b1f-a4b7-a22754ca567c" />
 
+## Future Plans
+'Every aspect listed are generalized ideas and are not limited to the ideas themselves.'
+* Add a functionality element to the system that integrates another user prompt for the specific industry/sector.
+* Add a graph that is representative of an asset's financial performance over time.
+* Allow the user to prioritize shown assets, which are saved in a database, impacting future algorithm outputs.
+* Showing extra financial details about assets (just being more in-depth about metrics in general).
+* Incorporating the ability for users to change the number of stocks being presented randomly (i.e., count = 1 --> count = 5).
+
+## Technical Stack
+* [API]: Yahoo Finance (API) data handling and migration
+* [Language]: Java
+* [IDE]: Visual Studio Code
+* [Functions]: Math.random() and Java.io.*
+
+_Last Updated: 10/27/2026 @ 5:30 P.M._
