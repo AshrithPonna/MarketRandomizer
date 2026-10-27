@@ -23,7 +23,7 @@ There are several important criterion in the base model for prioritization:
 
 ## Technical Stack
 * [API]: Yahoo Finance (API) data handling and migration
-* [Language]: Java
+* [Languages]: Java
 * [IDE]: Visual Studio Code
 * [Functions]: Math.random() and Java.io.*
 
