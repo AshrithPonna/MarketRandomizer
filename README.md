@@ -9,12 +9,12 @@ There are several important criterion in the base model for prioritization:
 * Financial metrics are stored in an array, which, in a **randomized** methodology, are visibly presented in groups of **3**.
 
 ## Flowchart Representation (Architecture)
-'This is representative of the functionality and logistics behind this program; each identifier corresponds to a certain function of the program and how it relates to various inputs, outputs, libraries, etc.'
+`This is representative of the functionality and logistics behind this program; each identifier corresponds to a certain function of the program and how it relates to various inputs, outputs, libraries, etc.`
 
 <img width="797" height="457" alt="StockMarketRandomizer_AshrithPonna drawio" src="https://github.com/user-attachments/assets/6d7d304b-3f17-4b1f-a4b7-a22754ca567c" />
 
 ## Future Plans
-'Every aspect listed are generalized ideas and are not limited to the ideas themselves.'
+`Every aspect listed are generalized ideas and are not limited to the ideas themselves.`
 * Add a functionality element to the system that integrates another user prompt for the specific industry/sector.
 * Add a graph that is representative of an asset's financial performance over time.
 * Allow the user to prioritize shown assets, which are saved in a database, impacting future algorithm outputs.
