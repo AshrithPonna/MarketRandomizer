@@ -1,6 +1,6 @@
 # Project: Market Randomization
 ## TODO (How to run application)
-(Add commands here once constructed.)
+(Add commands here once constructed).
 
 
 ## Project Relevance
