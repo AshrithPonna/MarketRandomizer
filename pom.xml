@@ -1,5 +1,5 @@
 <dependency>
-    <groupId>com.yahoo.fiance-api</groupId>
+    <groupId>com.yahoofinance-api</groupId>
     <artifactId>YahooFinanceAPI</artifactId>
     <version>3.17.0</version>
 </dependency>
