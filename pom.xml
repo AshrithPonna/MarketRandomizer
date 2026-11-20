@@ -1,23 +1,5 @@
-<project xmlns="http://apache.org"
-         xmlns:xsi="http://w3.org"
-         xsi:schemaLocation="http://apache.org http://apache.org">
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.marketrandomizer</groupId>
-    <artifactId>MarketRandomizer</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.yahoofinance-api</groupId>
-            <artifactId>YahooFinanceAPI</artifactId>
-            <version>3.17.0</version>
-        </dependency>
-    </dependencies>
-</project>
+<dependency>
+    <groupId>com.yahoo.fiance-api</groupId>
+    <artifactId>YahooFinanceAPI</artifactId>
+    <version>3.17.0</version>
+</dependency>
