@@ -9,8 +9,8 @@ public class MarketRandomizer {
             .requestFactory(new JdkClientHttpRequestFactory())
             .defaultHeader("User-Agent", "Mozilla/5.0")
             .build();
-        YFinance firstIteration = new YFinance();
-        Ticker anthropic = firstIteration.get("ANT");
+        YFinance firstIteration = new YFinance(restClient);
+        Ticker anthropic = firstIteration.ticker("ANT");
         System.out.println(anthropic.info());
     }
 
