@@ -1,3 +1,4 @@
+cat << 'EOF' > pom.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://apache.org"
          xmlns:xsi="http://w3.org"
@@ -16,9 +17,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.yahoofinance-api</groupId>
-            <artifactId>YahooFinanceAPI</artifactId>
-            <version>3.17.0</version>
+            <groupId>am.ik.yfinance4j</groupId>
+            <artifactId>yfinance4j</artifactId>
+            <version>0.2.0</version>
         </dependency>
     </dependencies>
 </project>
+
