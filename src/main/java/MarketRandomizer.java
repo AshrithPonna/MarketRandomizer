@@ -1,5 +1,7 @@
-import am.ik.yahoofinance4j.Stock;
-import am.ik.yahoofinance4j.YahooFinance;
+import am.ik.yfinance4j.YFinance;   
+import am.ik.yfinance4j.Ticker; 
+import org.springframework.http.client.JdkClientHttpRequestFactory;
+import org.springframework.web.client.RestClient;
 
 public class MarketRandomizer {
     public static void main(String[] args){
@@ -7,10 +9,9 @@ public class MarketRandomizer {
             .requestFactory(new JdkClientHttpRequestFactory())
             .defaultHeader("User-Agent", "Mozilla/5.0")
             .build();
-        YahooFinance firstIteration = new YahooFinance();
-        Stock anthropic = firstIteration.get("ANT");
+        YFinance firstIteration = new YFinance();
+        Ticker anthropic = firstIteration.get("ANT");
         System.out.println(anthropic.info());
-
     }
 
     
