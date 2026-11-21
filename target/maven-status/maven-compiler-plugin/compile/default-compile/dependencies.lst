@@ -1,0 +1,5 @@
+classpath:/Users/ashrithponna/.m2/repository/com/yahoofinance-api/YahooFinanceAPI/3.17.0/YahooFinanceAPI-3.17.0.jar	77887:1652807205000
+classpath:/Users/ashrithponna/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar	41203:1489682192000
+classpath:/Users/ashrithponna/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.6.1/jackson-databind-2.12.6.1.jar	1517298:1648348261000
+classpath:/Users/ashrithponna/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.6/jackson-annotations-2.12.6.jar	75708:1639534554000
+classpath:/Users/ashrithponna/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.6/jackson-core-2.12.6.jar	365539:1639534863000
