@@ -11,7 +11,7 @@ public class MarketRandomizer {
             .build();
         YFinance firstIteration = new YFinance(restClient);
         Ticker anthropic = firstIteration.ticker("ANT");
-        System.out.println(anthropic.info()); //woah printed
+        System.out.println(anthropic.info()); //printed 
     }
 
     
