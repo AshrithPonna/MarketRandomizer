@@ -3,6 +3,8 @@ import am.ik.yfinance4j.Ticker;
 import org.springframework.http.client.JdkClientHttpRequestFactory; // Client importations referenced below.
 import org.springframework.web.client.RestClient;
 
+//"to run,     mvn exec:java -Dexec.mainClass=MarketRandomizer"
+
 public class MarketRandomizer {
     public static void main(String[] args){
         RestClient restClient = RestClient.builder() // Client to request API information from yFinance (JSON parsed).
@@ -15,10 +17,9 @@ public class MarketRandomizer {
         Ticker apple = secondIteration.ticker("AAPL");
         YFinance thirdIteration = new YFinance(restClient);
         Ticker tesla = thirdIteration.ticker("TSLA");
-        System.out.println(anthropic.info()); //printed 
-        System.out.println(apple.info()); //printed 
+        System.out.println(anthropic.info() + "\n"); //printed 
+        System.out.println(apple.info() + "\n"); //printed 
         System.out.println(tesla.info()); //printed 
     }
 
-    
 }
