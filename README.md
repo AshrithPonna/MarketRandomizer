@@ -15,7 +15,7 @@ There are several important criterion in the base model for prioritization:
 ## Flowchart Representation (Architecture)
 `This is representative of the functionality and logistics behind this program; each identifier corresponds to a certain function of the program and how it relates to various inputs, outputs, libraries, etc.`
 
-<img width="960" height="720" alt="SystemDiagram" src="https://github.com/user-attachments/assets/914decb5-bf5c-4f46-aafb-e77f3c2c4bbf" />
+<img width="958" height="566" alt="SystemDiagram" src="https://github.com/user-attachments/assets/567acdef-a0d3-4df4-97bf-bc3903de49b2" />
 
 ## Future Plans
 `Every aspect listed are generalized ideas and are not limited to the ideas themselves.`
