@@ -18,6 +18,7 @@ public class MarketRandomizer {
         YFinance thirdIteration = new YFinance(restClient);
         Ticker tesla = thirdIteration.ticker("TSLA");
         System.out.println(anthropic.info() + "\n"); //printed 
+        System.out.println();
         System.out.println(apple.info() + "\n"); //printed 
         System.out.println(tesla.info()); //printed 
     }
