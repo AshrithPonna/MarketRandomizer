@@ -1,6 +1,10 @@
 # Project: Market Randomization
 ## TODO (How to run application)
-(Add commands here once constructed).
+
+In Maven, a Java dependency, run the following: 
+```bash
+mvn exec:java -Dexec.mainClass=MarketRandomizer
+```
 
 
 ## Project Relevance
