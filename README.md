@@ -1,6 +1,5 @@
 # Project: Market Randomization
-## TODO (How to run application)
-
+# Project Initialization
 In Maven, a Java dependency, run the following: 
 ```bash
 mvn exec:java -Dexec.mainClass=MarketRandomizer
