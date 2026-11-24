@@ -4,7 +4,7 @@
 
 
 ## Project Relevance
-The purpose of this project is to reduce the time spent looking for well-performing and lesser known stocks, comparative to the more well-known grouping(s). A more _diversified_ array of assets can be visible here. 
+The purpose of this project is to reduce the time spent looking for well-performing and lesser known stocks, comparative to the more well-known grouping(s). A more _diversified_ array of assets can be visible here. This is an issue because when clients access a major financial application, they only view the top known tickers and relevant financial reports.
 
 ## Project Scope (MVP)
 There are several important criterion in the base model for prioritization:
