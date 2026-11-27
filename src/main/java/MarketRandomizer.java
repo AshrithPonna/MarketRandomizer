@@ -22,17 +22,19 @@ public class MarketRandomizer {
         int randomNumberThree = 0;
 
         Scanner reader = new Scanner(System.in);
+        System.out.println("");
         System.out.println("Welcome to Market Randomizer!");
         System.out.println("");
         System.out.println("Please note that this system loops until you prompt 'no' during the next iteration.");
         System.out.println("");
-        System.out.println("To begin, would you like to see the randomized selection of assets constructed (yes/no)?");
         while (true){
+            System.out.println("To begin, would you like to see the randomized selection of assets constructed (yes/no)?");
+            System.out.println("");
             String input = reader.nextLine();
             if (input.equals("no")){
                 break;
             }else if (input.equals("yes")){
-                while (randomNumberOne != randomNumberTwo && randomNumberTwo != randomNumberThree && randomNumberOne != randomNumberThree){
+                while (randomNumberOne == randomNumberTwo || randomNumberTwo == randomNumberThree || randomNumberOne == randomNumberThree){
                     randomNumberOne = (int)(Math.random() * initialTickers.size());
                     randomNumberTwo = (int)(Math.random() * initialTickers.size());
                     randomNumberThree = (int)(Math.random() * initialTickers.size());
@@ -42,11 +44,12 @@ public class MarketRandomizer {
                 Ticker secondStock = request.ticker(initialTickers.get(randomNumberTwo));
                 Ticker thirdStock = request.ticker(initialTickers.get(randomNumberThree));
 
+                System.out.println("");
                 System.out.println("Processing.");
                 System.out.println("Processing..");
                 System.out.println("Processing...");
                 System.out.println("");
-                System.out.println(firstStock.symbol());;
+                System.out.println(firstStock.symbol() + "        " + secondStock.symbol() + "        " + thirdStock.symbol());
 
             }else{
                 System.out.println("Sorry, that command wasn't recognized, please either input 'yes'/'no'.");
