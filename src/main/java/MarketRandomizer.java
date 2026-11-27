@@ -29,6 +29,11 @@ public class MarketRandomizer {
             if (input.equals("no")){
                 break;
             }else if (input.equals("yes")){
+                int randomNumberOne = (int)(Math.random() * initialTickers.size());
+                int randomNumberTwo = (int)(Math.random() * initialTickers.size());
+                int randomNumberThree = (int)(Math.random() * initialTickers.size());
+                
+
 
             }else{
                 System.out.println("Sorry, that command wasn't recognized, please either input 'yes'/'no'.");
