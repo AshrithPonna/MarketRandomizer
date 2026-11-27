@@ -42,6 +42,11 @@ public class MarketRandomizer {
                 Ticker secondStock = request.ticker(initialTickers.get(randomNumberTwo));
                 Ticker thirdStock = request.ticker(initialTickers.get(randomNumberThree));
 
+                System.out.println("Processing.");
+                System.out.println("Processing..");
+                System.out.println("Processing...");
+                System.out.println("");
+                System.out.println(firstStock.symbol());;
 
             }else{
                 System.out.println("Sorry, that command wasn't recognized, please either input 'yes'/'no'.");
