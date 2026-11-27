@@ -2,6 +2,7 @@ import am.ik.yfinance4j.YFinance;
 import am.ik.yfinance4j.Ticker; 
 import org.springframework.http.client.JdkClientHttpRequestFactory; // Client importations referenced below.
 import org.springframework.web.client.RestClient;
+import java.util.ArrayList;
 
 //"to run,     mvn exec:java -Dexec.mainClass=MarketRandomizer"
 
