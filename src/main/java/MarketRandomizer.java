@@ -26,6 +26,7 @@ public class MarketRandomizer {
         while (input.equals("Y")){
 
         }
+        System.out.println("Thanks for using this application, have a great day!");
 
         YFinance firstIteration = new YFinance(restClient);
         Ticker anthropic = firstIteration.ticker("ANT");
