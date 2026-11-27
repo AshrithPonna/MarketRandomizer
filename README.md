@@ -1,9 +1,12 @@
 # Project: Market Randomization
+_A CS19300 project that shows terminal output, primarily regarding randomized stock information (with a goal of introducing clients to more "hidden" asset options)._
 # Project Initialization
-In Maven, a Java dependency, run the following: 
+To run the program, 
+1. In Maven, a Java dependency, run the following: 
 ```bash
 mvn exec:java -Dexec.mainClass=MarketRandomizer
 ```
+2. Follow the prompts to either loop or close the program.
 
 
 ## Project Relevance
@@ -27,6 +30,11 @@ There are several important criterion in the base model for prioritization:
 * Allow the user to prioritize shown assets, which are saved in a database, impacting future algorithm outputs.
 * Showing extra financial details about assets (just being more in-depth about metrics in general).
 * Incorporating the ability for users to change the number of stocks being presented randomly (i.e., count = 1 --> count = 5).
+
+## Project Attributes
+[x] 
+[x] 
+[x] 
 
 ## Technical Stack
 * API(s): Yahoo Finance (API) data handling and migration
