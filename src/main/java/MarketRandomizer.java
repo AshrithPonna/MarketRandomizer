@@ -16,8 +16,10 @@ public class MarketRandomizer {
 
         ArrayList<String> initialTickers = new ArrayList<>();
 
-        Scanner input = new Scanner(System.in);
+        Scanner reader = new Scanner(System.in);
+        String input = reader.nextLine();
         System.out.println("hi, this is a test: ");
+        System.out.println(input);
 
         YFinance firstIteration = new YFinance(restClient);
         Ticker anthropic = firstIteration.ticker("ANT");
@@ -26,10 +28,10 @@ public class MarketRandomizer {
         YFinance thirdIteration = new YFinance(restClient);
         Ticker tesla = thirdIteration.ticker("TSLA");
 
-        System.out.println(anthropic.info() + "\n"); //printed 
-        System.out.println();
-        System.out.println(apple.info() + "\n"); //printed 
-        System.out.println(tesla.info()); //printed 
+        //System.out.println(anthropic.info() + "\n"); //printed 
+        //System.out.println();
+        //System.out.println(apple.info() + "\n"); //printed 
+        //System.out.println(tesla.info()); //printed 
     }
 
 }
