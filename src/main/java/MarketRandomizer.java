@@ -17,6 +17,9 @@ public class MarketRandomizer {
 
         ArrayList<String> initialTickers = new ArrayList<>(List.of("SARO", "AIR", "LOAR", "DRS", "AVAV", 
         "FI", "BR", "VIAV", "LECO", "VMI", "CGNX", "WSO", "DAR", "URI", "GLDD", "ALH", "WLDN"));
+        int randomNumberOne = 0;
+        int randomNumberTwo = 0;
+        int randomNumberThree = 0;
 
         Scanner reader = new Scanner(System.in);
         System.out.println("Welcome to Market Randomizer!");
@@ -29,10 +32,13 @@ public class MarketRandomizer {
             if (input.equals("no")){
                 break;
             }else if (input.equals("yes")){
-                int randomNumberOne = (int)(Math.random() * initialTickers.size());
-                int randomNumberTwo = (int)(Math.random() * initialTickers.size());
-                int randomNumberThree = (int)(Math.random() * initialTickers.size());
+                while (randomNumberOne != randomNumberTwo && randomNumberTwo != randomNumberThree && randomNumberOne != randomNumberThree){
+                    randomNumberOne = (int)(Math.random() * initialTickers.size());
+                    randomNumberTwo = (int)(Math.random() * initialTickers.size());
+                    randomNumberThree = (int)(Math.random() * initialTickers.size());
+                }
                 
+            
 
 
             }else{
