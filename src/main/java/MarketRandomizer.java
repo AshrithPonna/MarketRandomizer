@@ -3,6 +3,7 @@ import am.ik.yfinance4j.Ticker;
 import org.springframework.http.client.JdkClientHttpRequestFactory; // Client importations referenced below.
 import org.springframework.web.client.RestClient;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 //"to run,     mvn exec:java -Dexec.mainClass=MarketRandomizer"
@@ -14,7 +15,8 @@ public class MarketRandomizer {
             .defaultHeader("User-Agent", "Mozilla/5.0")
             .build();
 
-        ArrayList<String> initialTickers = new ArrayList<>();
+        ArrayList<String> initialTickers = new ArrayList<>(List.of("SARO", "AIR", "LOAR", "DRS", "AVAV", 
+        "FI", "BR", "VIAV", "LECO", "VMI", "CGNX", "WSO", "DAR", "URI", "GLDD", "ALH", "WLDN"));
 
         Scanner reader = new Scanner(System.in);
         System.out.println("Welcome to Market Randomizer!");
