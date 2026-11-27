@@ -3,6 +3,7 @@ import am.ik.yfinance4j.Ticker;
 import org.springframework.http.client.JdkClientHttpRequestFactory; // Client importations referenced below.
 import org.springframework.web.client.RestClient;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 //"to run,     mvn exec:java -Dexec.mainClass=MarketRandomizer"
@@ -14,19 +15,53 @@ public class MarketRandomizer {
             .defaultHeader("User-Agent", "Mozilla/5.0")
             .build();
 
-        ArrayList<String> initialTickers = new ArrayList<>();
+        ArrayList<String> initialTickers = new ArrayList<>(List.of("SARO", "AIR", "LOAR", "DRS", "AVAV", 
+        "FI", "BR", "VIAV", "LECO", "VMI", "CGNX", "WSO", "DAR", "URI", "GLDD", "ALH", "WLDN"));
+        int randomNumberOne = 0;
+        int randomNumberTwo = 0;
+        int randomNumberThree = 0;
 
         Scanner reader = new Scanner(System.in);
+        System.out.println("");
         System.out.println("Welcome to Market Randomizer!");
         System.out.println("");
-        System.out.println("Please note that this system loops until you prompt 'N' during the next iteration.");
+        System.out.println("Please note that this system loops until you prompt 'no' during the next iteration.");
         System.out.println("");
-        System.out.println("To begin, would you like to see the randomized selection of assets constructed (Y/N)?");
-        String input = reader.nextLine();
-        while (input.equals("Y")){
+        while (true){
+            System.out.println("To begin, would you like to see the randomized selection of assets constructed (yes/no)?");
+            System.out.println("");
+            String input = reader.nextLine();
+            if (input.equals("no")){
+                break;
+            }else if (input.equals("yes")){
+                while (randomNumberOne == randomNumberTwo || randomNumberTwo == randomNumberThree || randomNumberOne == randomNumberThree){
+                    randomNumberOne = (int)(Math.random() * initialTickers.size());
+                    randomNumberTwo = (int)(Math.random() * initialTickers.size());
+                    randomNumberThree = (int)(Math.random() * initialTickers.size());
+                }
+                YFinance request = new YFinance(restClient);
+                Ticker firstStock = request.ticker(initialTickers.get(randomNumberOne));
+                Ticker secondStock = request.ticker(initialTickers.get(randomNumberTwo));
+                Ticker thirdStock = request.ticker(initialTickers.get(randomNumberThree));
+
+                System.out.println("");
+                System.out.println("Processing.");
+                System.out.println("Processing..");
+                System.out.println("Processing...");
+                System.out.println("");
+                System.out.println(firstStock.symbol() + "        " + secondStock.symbol() + "        " + thirdStock.symbol());
+                System.out.println(firstStock.history() + "        " + secondStock.history() + "        " + thirdStock.history());
+
+            }else{
+                System.out.println("Sorry, that command wasn't recognized, please either input 'yes'/'no'.");
+                System.out.println("");
+            }
 
         }
+        System.out.println("");
         System.out.println("Thanks for using this application, have a great day!");
+        System.out.println("");
+
         reader.close();
 
 
