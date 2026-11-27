@@ -10,13 +10,13 @@ mvn exec:java -Dexec.mainClass=MarketRandomizer
 
 
 ## Project Relevance
-The purpose of this project is to reduce the time spent looking for well-performing and lesser known stocks, comparative to the more well-known grouping(s). A more _diversified_ array of assets can be visible here. This is an issue because when clients access a financial application, they only view well-known tickers instead of top-performing ones. 
+The purpose of this project is to reduce the time spent looking for well-performing and lesser known stocks, comparative to the more well-known grouping(s). A more _diversified_ array list of assets can be visible here. This is an issue because when clients access a financial application, they only view well-known tickers instead of top-performing ones. 
 
 ## Project Scope (MVP)
 There are several important criterion in the base model for prioritization:
 * **Yahoo Finance (API)** referenced to access financial information and metrics.
 * User is prompted for an input, which is linked to program functionality ("yes"/"no"); this is correlative to a **looped system**.
-* Financial metrics are stored in an array, which, in a **randomized** methodology, are visibly presented in groups of **3**.
+* Financial metrics are stored in an array list, which, in a **randomized** methodology, are visibly presented in groups of **3**.
 
 ## Flowchart Representation (Architecture)
 `This is representative of the functionality and logistics behind this program; each identifier corresponds to a certain function of the program and how it relates to various inputs, outputs, libraries, etc.`
