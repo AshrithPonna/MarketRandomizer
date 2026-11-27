@@ -1,6 +1,7 @@
+import org.springframework.http.client.JdkClientHttpRequestFactory; // Client importations referenced below.
 import am.ik.yfinance4j.YFinance;   
 import am.ik.yfinance4j.Ticker; 
-import org.springframework.http.client.JdkClientHttpRequestFactory; // Client importations referenced below.
+import am.ik.yfinance4j.quote.StockInfo;
 import org.springframework.web.client.RestClient;
 import java.util.ArrayList;
 import java.util.List;
