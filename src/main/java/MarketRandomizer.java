@@ -37,6 +37,8 @@ public class MarketRandomizer {
                     randomNumberTwo = (int)(Math.random() * initialTickers.size());
                     randomNumberThree = (int)(Math.random() * initialTickers.size());
                 }
+                YFinance request = new YFinance(restClient);
+                Ticker firstStock = request.ticker(initialTickers.get(randomNumberOne));
                 
             
 
