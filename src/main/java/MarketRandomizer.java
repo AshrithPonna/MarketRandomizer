@@ -27,6 +27,7 @@ public class MarketRandomizer {
 
         }
         System.out.println("Thanks for using this application, have a great day!");
+        reader.close();
 
         YFinance firstIteration = new YFinance(restClient);
         Ticker anthropic = firstIteration.ticker("ANT");
