@@ -50,13 +50,18 @@ public class MarketRandomizer {
                 System.out.println("Processing...");
                 System.out.println("");
                 System.out.println(firstStock.symbol() + "        " + secondStock.symbol() + "        " + thirdStock.symbol());
+                System.out.println(firstStock.history() + "        " + secondStock.history() + "        " + thirdStock.history());
 
             }else{
                 System.out.println("Sorry, that command wasn't recognized, please either input 'yes'/'no'.");
+                System.out.println("");
             }
 
         }
+        System.out.println("");
         System.out.println("Thanks for using this application, have a great day!");
+        System.out.println("");
+
         reader.close();
 
 
