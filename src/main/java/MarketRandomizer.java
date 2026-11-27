@@ -2,6 +2,9 @@ import am.ik.yfinance4j.YFinance;
 import am.ik.yfinance4j.Ticker; 
 import org.springframework.http.client.JdkClientHttpRequestFactory; // Client importations referenced below.
 import org.springframework.web.client.RestClient;
+import java.util.ArrayList;
+
+//"to run,     mvn exec:java -Dexec.mainClass=MarketRandomizer"
 
 public class MarketRandomizer {
     public static void main(String[] args){
@@ -9,10 +12,20 @@ public class MarketRandomizer {
             .requestFactory(new JdkClientHttpRequestFactory())
             .defaultHeader("User-Agent", "Mozilla/5.0")
             .build();
+
+        ArrayList<String> initialTickers = new ArrayList<>();
+
         YFinance firstIteration = new YFinance(restClient);
         Ticker anthropic = firstIteration.ticker("ANT");
-        System.out.println(anthropic.info()); //woah printed
+        YFinance secondIteration = new YFinance(restClient);
+        Ticker apple = secondIteration.ticker("AAPL");
+        YFinance thirdIteration = new YFinance(restClient);
+        Ticker tesla = thirdIteration.ticker("TSLA");
+        
+        System.out.println(anthropic.info() + "\n"); //printed 
+        System.out.println();
+        System.out.println(apple.info() + "\n"); //printed 
+        System.out.println(tesla.info()); //printed 
     }
 
-    
 }
