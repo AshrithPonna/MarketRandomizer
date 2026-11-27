@@ -16,6 +16,9 @@ public class MarketRandomizer {
 
         ArrayList<String> initialTickers = new ArrayList<>();
 
+        Scanner input = new Scanner(System.in);
+        System.out.println("hi, this is a test: ");
+
         YFinance firstIteration = new YFinance(restClient);
         Ticker anthropic = firstIteration.ticker("ANT");
         YFinance secondIteration = new YFinance(restClient);
