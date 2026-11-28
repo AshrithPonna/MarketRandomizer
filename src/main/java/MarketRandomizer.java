@@ -53,9 +53,9 @@ public class MarketRandomizer {
                 System.out.println("Processing..");
                 System.out.println("Processing...");
                 System.out.println("");
-                System.out.printf("%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", firstStock.info().longName().orElse("N/A"), secondStock.info().longName().orElse("N/A"), thirdStock.info().longName().orElse("N/A"));
-                System.out.printf("%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", firstStock.symbol(), secondStock.symbol(), thirdStock.symbol());
-                System.out.printf("%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", firstStock.info().sector().orElse("N/A"), secondStock.info().sector().orElse("N/A"), thirdStock.info().sector().orElse("N/A"));
+                System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Company:", firstStock.info().longName().orElse("N/A"), secondStock.info().longName().orElse("N/A"), thirdStock.info().longName().orElse("N/A"));
+                System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Ticker:",firstStock.symbol(), secondStock.symbol(), thirdStock.symbol());
+                System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Sector:", firstStock.info().sector().orElse("N/A"), secondStock.info().sector().orElse("N/A"), thirdStock.info().sector().orElse("N/A"));
 
             }else{
                 System.out.println("Sorry, that command wasn't recognized, please either input 'yes'/'no'.");
