@@ -56,7 +56,9 @@ public class MarketRandomizer {
                 System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Company:", firstStock.info().longName().orElse("N/A"), secondStock.info().longName().orElse("N/A"), thirdStock.info().longName().orElse("N/A"));
                 System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Ticker:",firstStock.symbol(), secondStock.symbol(), thirdStock.symbol());
                 System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Sector:", firstStock.info().sector().orElse("N/A"), secondStock.info().sector().orElse("N/A"), thirdStock.info().sector().orElse("N/A"));
-
+                System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Industry:", firstStock.info().industry().orElse("N/A"), secondStock.info().industry().orElse("N/A"), thirdStock.info().industry().orElse("N/A"));
+                System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Price:", firstStock.info().currentPrice().orElse(null), secondStock.info().currentPrice().orElse(null), thirdStock.info().currentPrice().orElse(null));
+                
             }else{
                 System.out.println("Sorry, that command wasn't recognized, please either input 'yes'/'no'.");
             }
