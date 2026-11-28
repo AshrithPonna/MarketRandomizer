@@ -18,9 +18,12 @@ public class MarketRandomizer {
 
         ArrayList<String> initialTickers = new ArrayList<>(List.of("SARO", "AIR", "LOAR", "DRS", "AVAV", 
         "FI", "BR", "VIAV", "LECO", "VMI", "CGNX", "WSO", "DAR", "URI", "GLDD", "ALH", "WLDN"));
+
         int randomNumberOne = 0;
         int randomNumberTwo = 0;
         int randomNumberThree = 0;
+
+        
 
         Scanner reader = new Scanner(System.in);
         System.out.println("");
@@ -50,13 +53,11 @@ public class MarketRandomizer {
                 System.out.println("Processing..");
                 System.out.println("Processing...");
                 System.out.println("");
-                System.out.println(firstStock.info().longName() + "        " + secondStock.info().longName() + "        " + thirdStock.info().longName());
-                System.out.println(firstStock.symbol() + "        " + secondStock.symbol() + "        " + thirdStock.symbol());
-                System.out.println("");
+                System.out.printf("%-15s %-10s %10s%n", firstStock.info().longName(), secondStock.info().longName(), thirdStock.info().longName());
+                System.out.printf("%-15s %-10s %10s%n", firstStock.symbol(), secondStock.symbol(), thirdStock.symbol());
 
             }else{
                 System.out.println("Sorry, that command wasn't recognized, please either input 'yes'/'no'.");
-                System.out.println("");
             }
 
         }
