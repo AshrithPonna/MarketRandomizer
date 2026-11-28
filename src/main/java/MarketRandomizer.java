@@ -38,6 +38,9 @@ public class MarketRandomizer {
             if (input.equals("no")){
                 break;
             }else if (input.equals("yes")){
+                randomNumberOne = 0;
+                randomNumberTwo = 0;
+                randomNumberThree = 0;
                 while (randomNumberOne == randomNumberTwo || randomNumberTwo == randomNumberThree || randomNumberOne == randomNumberThree){
                     randomNumberOne = (int)(Math.random() * initialTickers.size());
                     randomNumberTwo = (int)(Math.random() * initialTickers.size());
@@ -59,7 +62,8 @@ public class MarketRandomizer {
                 System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Industry:", firstStock.info().industry().orElse("N/A"), secondStock.info().industry().orElse("N/A"), thirdStock.info().industry().orElse("N/A"));
                 System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Exchange:", firstStock.info().exchange().orElse("N/A"), secondStock.info().exchange().orElse("N/A"), thirdStock.info().exchange().orElse("N/A"));
                 System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Price:", firstStock.info().currentPrice().orElse(null), secondStock.info().currentPrice().orElse(null), thirdStock.info().currentPrice().orElse(null));
-                
+                System.out.printf("%-12s" + "%-" + firstStock.info().longName().orElse("N/A").length() + "s | %-" + secondStock.info().longName().orElse("N/A").length() + "s | %-" + thirdStock.info().longName().orElse("N/A").length() + "s%n", "Cap:", firstStock.info().marketCap().orElse(null), secondStock.info().marketCap().orElse(null), thirdStock.info().marketCap().orElse(null));
+
             }else{
                 System.out.println("Sorry, that command wasn't recognized, please either input 'yes'/'no'.");
             }
